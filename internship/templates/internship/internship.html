@@ -1,0 +1,28 @@
+{% extends 'myresume/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">INTERNSHIP</h1>
+    <div class="row text-white mb-5">
+
+
+        <div class="col-sm-8 mb-5">
+
+            <h3>FULL-STACK PYTHON DEVELOPER</h3>
+            <p class="ss-color">Completed six month internship program as a full stack developer in
+                netcoreinfo Business Group.
+            </p>
+            <a href="https://drive.google.com/file/d/10dqyCQOeoR6N1VbqxUPJ-_5sU64XWWca/view?usp=sharing" class="btn btn-outline-warning my-2 mr-4 mx-2">Click me</a>
+
+        </div>
+
+        <div class="col-sm-4">
+            <img src="{% static 'myresume/certificate/nitd.jpg' %}" alt="profilepic" class="img-thumbnail" width="250px"
+                height="150px">
+        </div>
+    </div>
+
+    
+    {% endblock content %}

@@ -1,0 +1,51 @@
+{% extends 'myresume/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div>
+    <div class="text-center">
+        <img src="{% static 'myresume/images/pic1.jpg' %}" alt="profilepic" class="img-thumbnail" width="250px"
+            height="150px">
+    </div>
+
+    <div class="mt-5 text-white mx-5 text-justify"> <!--text-justify not work-->
+        <h1 class="font-weight-bold st-font">
+            Hello,
+        </h1>
+
+        <div class="text-justify px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">
+                I am <b class="text-warning">Purushotam Kumar Singh</b> having 1 years of full-stack web development
+                experience for global businesses,
+                I offer the technical expertise you are seeking for your web devloper position.
+            </p>
+            <p>
+                Since earning my bachelopr's degree in internet and web devlopment from AKTU University, I have served
+                as a web
+                developer at <b class="text-warning">NITD</b>, of biggest premier digital marketing and web development
+                firm. In this position, I have led web development projects for clients in diverse industries including
+                technology,
+                manufacturing, pharmaceutical, hospitality, retail and financial services.">
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea neque dignissimos, asperiores
+                voluptatibus itaque quos maiores nisi rem aliquam necessitatibus repudiandae odio dolorum quam
+                recusandae libero aperiam ad mollitia.
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="https://drive.google.com/file/d/1MnE-ojuB3AUcj3hNlbAwlaKX2XJiReQb/view?usp=sharing" class="btn btn-outline-warning mx-3 my-3">Resume</a>
+        
+        <a href="https://drive.google.com/file/d/17DIPVTR9FaDfNMrQMjkfH3GJ7d-v_DtU/view?usp=sharing" class="btn btn-outline-warning my-3 mr-5 mx-3">Hire me</a>
+        
+        <a href="{% url 'form' %}" class="btn btn-outline-warning my-3 mx-3">Contact Me</a>
+    </div>
+</div>
+
+
+
+{% endblock content %}

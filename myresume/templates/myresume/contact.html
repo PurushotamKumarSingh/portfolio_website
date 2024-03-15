@@ -1,0 +1,84 @@
+{% extends 'myresume/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT US</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">
+            Do you have any questions? Please do not hesitate to contact.
+            I will come back to you within a matter of hours to help you.
+        </p>
+
+        <div class="col-sm-9 mb-5">
+            <!-- <form action="{% url 'send' %}" method="POST">
+            {% csrf_token %}
+                 {{form.name.label}}
+                 {{form.name.value}}
+                 
+                
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form> -->
+            <form action="{% url 'send' %}" method="POST">
+                {% csrf_token %}
+                <div>
+                    {{form.name.label_tag}} <br>
+                    {{form.name}}
+                </div>
+
+                <div>
+                    {{form.email.label_tag}} <br>
+                    {{form.email}}
+                </div>
+
+                <div>
+                    {{form.subject.label_tag}} <br>
+                    {{form.subject}}
+                </div>
+
+                <div>
+                    {{form.messages.label_tag}} <br>
+                    {{form.messages}}
+                </div>
+
+                <button class="btn btn-primary mt-3" type="submit">Send</button>
+            </form>
+            </body>
+
+            </html>
+        </div>
+        <div class="col-sm-3 text-center text-white">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marker-alt fa-2xl i-color"></i>
+                    <a href="https://maps.app.goo.gl/LkjBUxGrxvQP3hzdA">
+                        <p class="text-white">Reach At Me</p>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-phone mt-4 fa-2xl i-color"></i>
+                    <a href="tel:+91 9798070534">
+                        <p class="text-white">Call Me</p>
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope mt-4 fa-2xl i-color"></i>
+                    <a href="mailto:purushotamsingh501@gmail.com">
+                        <p class="text-white">Mail Me</p>
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin-in mt-4 fa-2xl i-color"></i>
+                    <a href="https://www.linkedin.com/in/purushotam-kumar-singh-407344227">
+                        <p class="text-white">purushotam-kumar-singh</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+{% endblock content %}
