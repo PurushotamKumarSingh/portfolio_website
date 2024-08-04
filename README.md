@@ -9,7 +9,7 @@ The personal portfolio website is a dynamic platform built with HTML, CSS, Boots
 https://github.com/user-attachments/assets/376132e6-0299-4a05-9abd-8699972e67e9
 
 
-## portfolio ScreenShot
+## Portfolio Screen-Shot
 
 ![portfolio_ScreenShot](https://github.com/user-attachments/assets/7b648852-5ed0-4add-8a9a-3a689ca1c387)
 
